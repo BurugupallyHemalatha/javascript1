@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        FOR,WHILE,DOWHILE,FOREACH LOOPS IN JAVASCRIPT
+    </title>
+</head>
+
+<body>
+    <h1>FOR LOOP</h1>
+    <script>
+        let i = 5
+        for (i = 0; i < 3; i++) {
+            document.write(i)
+        }
+    </script>
+    <h1>FOR LOOP USING ARRAY</h1>
+    <script>
+        let hemaPlaces = ["USA", "tamilnadu", "kerala", "kashimir", "kanyakummari"]
+        for (let value = 0; value < hemaPlaces.length; value++) {
+            document.write("Hema loves the place called " + hemaPlaces[value])
+        }
+    </script>
+    <h1>FOR EACH LOOP</h1>
+    <script>
+        let values = ['ravali', 'roja', 'shiva', 'saibaba', 'ramaanjaneya'];
+        values.forEach(function name(elements) {
+            document.write("hello friends" + elements)
+        })
+    </script>
+    <h1>FOR OF LOOP</h1>
+    <script>
+        let value = ['div', 'span', 'passage', 'tags', 'events'];
+        for (element of value) {
+            document.write("This for of value " + element)
+        }
+    </script>
+    <h1>fOR IN LOOP</h1>
+    <script>
+        //use this loop to iterate over a object
+        let object = {
+            name: "hema",
+            salary: 0000,
+            college: "pallavi"
+        }
+        for (key in object) {
+            document.write(` ${key}  ${object[key]} `)
+        }
+    </script>
+    <h1>WHILE LOOP IN JAVASCRIPT</h1>
+    <script>
+        i = 0;
+        while (i < 4) {
+            document.write(`${i} is  less then 4,`)
+            i++
+        }
+    </script>
+    <h1>DO WHILE LOOP IN JAVASCRIPT</h1>
+    <script>
+        do {
+            document.write(`${i} is less then 4`)
+            i++
+        } while (i < 4)
+    </script>
+</body>
+
+</html>
